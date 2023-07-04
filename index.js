@@ -38,7 +38,27 @@ function Navbar() {
     )
 }
 
+function MainContent() {
+    return (
+        <div>
+            <h1>React tutorial</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel maximus neque, vitae lobortis eros. Maecenas aliquet, felis quis porttitor volutpat, quam ante vestibulum velit, non facilisis orci ex eu purus. Praesent lobortis at velit nec gravida. Aenean vel malesuada urna. Duis sem nisi, imperdiet in viverra nec, viverra id quam. Morbi a dictum enim. Duis porttitor, augue id dapibus pharetra, turpis magna tempus dui, ut consequat sapien sapien quis ligula. Cras pulvinar ante vel leo blandit, et dapibus ipsum varius.
+            </p>
+            <p>
+                Nulla a laoreet velit. Ut vel viverra enim. Etiam ex metus, venenatis id euismod non, eleifend eget massa. Vestibulum dolor risus, euismod in nisi a, dapibus lobortis justo. Fusce facilisis, dui in ullamcorper tristique, lectus lacus efficitur odio, vel suscipit tortor justo a libero. Duis eget eros a erat iaculis pulvinar. Vivamus hendrerit aliquam diam, id volutpat orci vehicula a. Sed porta, odio pellentesque lacinia sodales, velit lorem sollicitudin elit, non tincidunt quam mi nec purus. Nulla facilisi. Fusce vel commodo ipsum. In scelerisque, sem nec aliquam sodales, nunc nulla vehicula lectus, in tincidunt nunc elit at tellus. Sed eu pellentesque quam. Nullam ultricies ut lacus sollicitudin sollicitudin. Phasellus dignissim vestibulum odio, eget interdum dui rhoncus non.
+            </p>
+        </div>
+    )
+}
+
 ReactDOM.render(
-    <Navbar />,
+    <div>
+        <Navbar />
+        
+        <MainContent />
+    </div>
+    ,
     document.getElementById("root")
 )
