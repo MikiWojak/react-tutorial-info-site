@@ -1,7 +1,7 @@
 // JSX
 const navbar = (
     <nav>
-        <h1>Sword and Sandals</h1>
+        <h1>Sword and Play</h1>
 
         <ul>
             <li>Pricing</li>
