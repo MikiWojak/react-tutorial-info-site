@@ -6,6 +6,12 @@ const Header = () => {
     <header>
       <nav>
         <img src="./react-logo.png" alt="react-logo" width="40px" />
+
+        <ul className="nav-items">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
   )
@@ -38,7 +44,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      
+
       <MainContent />
 
       <Footer />
