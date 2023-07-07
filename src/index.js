@@ -20,7 +20,7 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <small>
         &copy; 2023 MikiWojak development. All rights reserved.
       </small>
