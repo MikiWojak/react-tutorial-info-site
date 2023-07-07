@@ -43,7 +43,7 @@ const MainContent = () => {
 
 const App = () => {
   return (
-    <div>
+    <div className="layout">
       <Header />
 
       <MainContent />
