@@ -9,6 +9,7 @@ body {
 
     margin: 0;
     color: #FFF;
+    background-color: #282D35;
 }
 
 .container {
@@ -49,12 +50,20 @@ body {
 
 .main {
     height: 100%;
-    background-color: #282D35;
-    padding: 55px 25px 0 25px;
+    padding: 55px 25px;
 }
 
 .main--header {
     font-size: 40px;
-    font-weight: 700;
-    margin: 0 0 45px 0;
+    letter-spacing: -0.05em;
+}
+
+.main--list {
+    margin-top: 45px;
+}
+
+.main--list > li {
+    line-height: 19px;
+    padding-block: 10px;
+    max-width: 400px;
 }
