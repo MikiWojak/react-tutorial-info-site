@@ -10,3 +10,38 @@ body {
 
     margin: 0;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21222A;
+    padding: 30px 25px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-img {
+    display: block;
+    width: 29px;
+}
+
+.nav-logo-text {
+    color: #61DAFB;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1.113px;
+    margin: 0 0 0 5px;
+    line-height: 30px;
+}
+
+.nav-item {
+    color: #DEEBF8;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 30px;
+}
