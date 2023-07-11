@@ -51,6 +51,10 @@ body {
 .main {
     height: 100%;
     padding: 55px 25px;
+
+    background-image: url('../images/react-logo-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: right 180px;
 }
 
 .main--header {
