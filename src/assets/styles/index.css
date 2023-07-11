@@ -67,3 +67,8 @@ body {
     padding-block: 10px;
     max-width: 400px;
 }
+
+.main--list > li::marker {
+    color: #61DAFB;
+    font-size: 1.4rem;
+}
