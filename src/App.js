@@ -4,13 +4,20 @@ import Main from './components/main/Main'
 import Navbar from './components/layout/Navbar'
 
 const App = () => {
-    const [darkMode] = useState(false)
+    const [darkMode, setDarkMode] = useState(false)
+
+    const toggleDarkMode = () => {
+        setDarkMode(prevDarkMode => !prevDarkMode)
+    }
 
     return (
         <div className="container">
-            <Navbar darkMode={darkMode}/>
+            <Navbar
+                darkMode={darkMode}
+                toggleDarkMode={toggleDarkMode}
+            />
 
-            <Main darkMode={darkMode}/>
+            <Main darkMode={darkMode} />
         </div>
     )
 }
