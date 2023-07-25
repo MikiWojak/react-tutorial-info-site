@@ -2,10 +2,10 @@ import React from 'react'
 
 import reactLogo from '../../assets/images/react-icon-small.png'
 
-const Navbar = (props) => {
+const Navbar = ({ darkMode, toggleDarkMode}) => {
     return (
         <nav
-            className={props.darkMode ? "dark": ""}
+            className={darkMode ? "dark": ""}
         >
             <img 
                 src={reactLogo}
@@ -20,7 +20,7 @@ const Navbar = (props) => {
                 <p className="toggler--light">Light</p>
                 <div 
                     className="toggler--slider"
-                    onClick={props.toggleDarkMode}
+                    onClick={toggleDarkMode}
                 >
                     <div className="toggler--slider--circle"></div>
                 </div>
