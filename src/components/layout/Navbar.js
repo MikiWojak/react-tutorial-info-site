@@ -2,15 +2,30 @@ import React from 'react'
 
 import reactLogo from '../../assets/images/react-icon-small.png'
 
-const Navbar = () => {
+const Navbar = ({ darkMode, toggleDarkMode}) => {
     return (
-        <nav className="nav">
-            <div className="nav--logo">
-                <img src={reactLogo} alt="react-logo" className="nav--logo_img" />
-                <h3 className="nav--logo_text">ReactFacts</h3>
-            </div>
+        <nav
+            className={darkMode ? "dark": ""}
+        >
+            <img 
+                src={reactLogo}
+                alt="react-logo"
+                className="nav--logo_icon"
+            />
+            <h3 className="nav--logo_text">ReactFacts</h3>
 
-            <h4 className="nav--item">React Course - Project 1</h4>
+            <div 
+                className="toggler" 
+            >
+                <p className="toggler--light">Light</p>
+                <div 
+                    className="toggler--slider"
+                    onClick={toggleDarkMode}
+                >
+                    <div className="toggler--slider--circle"></div>
+                </div>
+                <p className="toggler--dark">Dark</p>
+            </div>
         </nav>
     )
 }
